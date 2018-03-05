@@ -1,0 +1,8 @@
+
+Peer Os Plugins
+===============
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Subutai Peer-os-plugins
+

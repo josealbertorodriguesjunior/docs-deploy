@@ -1,0 +1,87 @@
+Glossary
+========
+**Bazaar** - online platform to buy/sell/exchange/barter devices, cloud
+applications, and idle computer resources.
+
+**Blockchain Router** - Subutai’s power-efficient “green” broadband
+Cloud router and open hardware IoT gateway that serves as a
+plug-and-play cryptocurrency wallet and mining device.
+
+**Blueprints** - a single, standardized format to specify general
+instructions for installing, updating and maintaining P2P distributed
+cloud applications.
+
+**CaaS** - Containers-as-a-Service: a cloud service model that allows
+users to manage and deploy containers, applications, and clusters
+through container-based virtualization.
+
+**Container** - an LXC created during environment setup (a building
+block of an environment).
+
+**Control Center** - a desktop application that allows users to manage
+their GoodWill balance, environments, containers, Peers, etc.
+
+**Environment** - a logically grouped set of containers distributed
+across one or multiple Peers that share the same network (they belong to
+the same p2p swarm). An Environment is owned by the user who created it,
+and can be distributed to multiple Resource Hosts in a single Peer or
+multiple Peers, who will have a direct network access to each other.
+
+**Edge** - pushes IoT data to be more efficiently processed closer to
+where it is created instead of sending it across data centers or clouds.
+
+**Fog** - a decentralized computing infrastructure where applications,
+compute, data, and storage are distributed between the data source, the
+cloud, and IoT gateway.
+
+**GoodWill** - the token currency used in the Subutai Bazaar; a
+lightweight digital asset token used in the exchange of resources.
+
+**Google App Engine (GAE)** - a fully managed platform that completely
+abstracts away infrastructure so you focus only on code.
+
+**IaaS** - Infrastructure-as-a-Service: a form of cloud computing that
+provides virtualized computing resources over the Internet.
+
+**LXC** - Linux Containers: operating system-level capabilities that
+make it possible to run multiple isolated Linux systems, or containers,
+on one control host.
+
+**Management Host**: a server hosting the management console part of
+Subutai setup (It is a special container that hosts a management
+container with Subutai console app inside).
+
+**Management** - a Java application deployed inside a Subutai container
+whose main purpose is to control the Resource Host, Peer, Environment,
+etc. A single Management container can control multiple Resource Hosts.
+Management has an intuitive web interface.
+
+**P2P network** - a private tunneling level that allows Resource Hosts
+to interact with each other assuming that all of them are connected to
+the same LAN
+
+**PaaS** - Platform-as-a-Service: a category of cloud computing that
+provides a platform and environment to allow developers to build
+applications and services over the Internet.
+
+**Peer** - a single Subutai node with management services (a Management
+host container), and one or more local Resource Hosts that contribute
+resources to be offered to P2P cloud services. All the Resource Hosts in
+the same LAN can connect to a local Management container and form a
+single Peer.
+
+**Peer Console** - a data center management, container cloud
+orchestration, resource sharing and monetization software and more. It
+is a place to manage containers and environments.
+
+**PeerOS** - Subutai’s Open Source, container-based P2P Cloud and IoT
+software and firmware.
+
+**Resource Hosts (RHs)** - servers providing premises for new
+containers. It is composed by the resources your computer has.
+
+**Subutai™** - the world’s first intelligent Peer-to-Peer (P2P) Cloud
+Computing platform.
+
+**Template** - an image from which containers are created (cloned)
+allowing one to create and host infrastructure on a Peer.

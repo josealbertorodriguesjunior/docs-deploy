@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Subutai  &mdash; Subutai Documentation v6.x</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Subutai helps connect individuals from all over the globe so they may share resources to create secure cloud environments across their peers. Just as a cloud can float down onto land and is thus called fog, IoT devices attach when available and needed to your cloud as it floats around with you.">
+    <meta name="author" content="Optdyn Corporation">
+    <meta name="keywords" content="Optdyn, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT">
+
+    <!--Custom CSS from J&J-->
+    <link rel="stylesheet" href="../../_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customcss/bootstrap-social.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../../_static/fontawesome/fontawesome-all.css" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../../_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/customcss/bootstrap-social.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/fontawesome/fontawesome-all.css" type="text/css" />
+
+    
+
+<link rel="stylesheet" href="../../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+
+
+
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+
+<link rel="stylesheet" href="../../_static/custom/styles.css" type="text/css" />
+<link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../../',
+            VERSION:     '6.4',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    
+    <link rel="icon" type="image/png"  href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="Subutai Documentation v6.x" href="../../index.html" />
+    <link rel="up" title="Subutai PeerOS" href="../PeerOS_toctree.html" />
+    <link rel="next" title="How To Use The Subutai Console" href="04_How_to_use_the_Subutai_Console.html" />
+    <link rel="prev" title="Install PeerOS" href="02_Install_PeerOS.html" /> 
+  </head>
+  <body role="document" style="font-family: 'Maven Pro' sans-serif;">
+
+
+    <nav class="row navbar navbar-inverse navbar-fixed-top" style="">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="logo" src="../../_static/logo.png" width="160"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #000;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="internal-pages/p2p-cloud-platform.html" ><h4 style="font-size: 14px; color: #fff; font-weight: 700;">P2P Cloud Platform</h4></a></li>
+          <li><a href="internal-pages/goodwill.html"><h4 style="font-size: 14px; color: #fff; font-weight: 700;">GoodWill</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Ideation<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="internal-pages/p2p-cloud.html"><h4 style="font-size: 14px; font-weight: 700;">P2P Cloud</h4></a></li>
+                  <li><a href="internal-pages/manifesto.html"><h4 style="font-size: 14px; font-weight: 700;">Manifesto</h4></a></li>
+                  <li><a href="https://subutai.blog/"><h4 style="font-size: 14px; font-weight: 700;">Blog</h4></a></li>
+                  <li><a href="internal-pages/tribute.html"><h4 style="font-size: 14px; font-weight: 700;">Tribute</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA"><h4 style="font-size: 14px; font-weight: 700;">Presentation</h4></a></li>
+                  <li><a href="https://docs.subutai.io/glossary.html" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Glossary</h4></a></li>
+                </ul>
+              </li>
+
+          <li><a href="https://docs.subutai.io/attic/Peer/getting-started.html" target="_blank"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Getting Started</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Resources<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://github.com/subutai-io" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">GitHub</h4></a></li>
+                  <li><a href="internal-pages/faq.html"><h4 style="font-size: 14px; font-weight: 700;">FAQ</h4></a></li>
+                  <li><a href="https://github.com/subutai-blueprints" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Blueprints</h4></a></li>
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://subutai.blog/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Use Cases</h4></a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Community<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://slack.subut.ai/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Slack</h4></a></li>
+                  <li><a href="https://telegram.org/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Telegram</h4></a></li>
+                  <li><a href="https://twitter.com/SubutaiCloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Twitter</h4></a></li>
+                  <li><a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Reddit</h4></a></li>
+                  <li><a href="https://www.facebook.com/subutaicloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Facebook</h4></a></li>
+                  <li><a href="https://www.linkedin.com/company/subutai-social-cloud/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Linkedin</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Youtube</h4></a></li>
+                </ul>
+              </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- container -->
+    <div class="container-fluid">
+      
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="02_Install_PeerOS.html"
+                        title="previous chapter">Install PeerOS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="04_How_to_use_the_Subutai_Console.html"
+                        title="next chapter">How To Use The Subutai Console</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Products/PeerOS/03_Run_PeerOS_with_Vagrant.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../../search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="run-peeros-with-vagrant">
+<h1>Run PeerOS With Vagrant<a class="headerlink" href="#run-peeros-with-vagrant" title="Permalink to this headline">¶</a></h1>
+<p>The easiest and quickest way to get a Subutai Peer running on any
+platform is to use Vagrant with VirtualBox. Don’t use package managers
+to install them: their versions are too old. Download the latest
+<a class="reference external" href="https://www.vagrantup.com/downloads.html">Vagrant 2.0.1</a> or higher
+and <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox 5.1.0</a> or
+higher from their respective websites. Once Vagrant and VirtualBox are
+installed init the Vagrantfile then up the instance like so:</p>
+<p><strong>1.1 This command creates a Subutai Peer VM based on Debian 9.x.
+(Recommended):</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">vagrant init –minimal subutai/stretch</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1.2 This command creates a Subutai Peer VM based on Ubuntu Server
+16.04.3. :</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">vagrant init –minimal subutai/xenial</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. For Vagrant you will need to install the</strong> <strong>subutai</strong> <strong>and</strong>
+<strong>vbguest</strong> <strong>plugins:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">12</th>
+<th class="head">vagr
+ant
+plug
+in
+inst
+all
+vagr
+ant-
+subu
+taiv
+agra
+nt
+plug
+in
+inst
+all
+vagr
+ant-
+vbgu
+est</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Once plugin is installed, you can create and start the Subutai Peer
+VM:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">vagrant up</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>During this process you will be asked for which bridge interface you
+want to use. The first option provided by Vagrant is usually the right
+one: the network interface that is actively being used to get on the
+Internet.</p>
+<p>Congratulations! You have a Peer!</p>
+<p>After a lot of output you’ll see output similar (your console’s IP
+address might be different) to the following:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1234
+5678
+9101
+1121
+3</th>
+<th class="head">defa
+ult:
+defa
+ult:
+SUCC
+ESS:
+Your
+peer
+is
+up.
+Welc
+ome
+to
+the
+Hord
+e!de
+faul
+t:
+—-
+—-
+—-
+—-
+—-
+—-
+—-
+—-
+—-
+—-
+—-
+—d
+efau
+lt:d
+efau
+lt:
+Next
+step
+s
+…d
+efau
+lt:
+Make
+sure
+Subu
+tai’
+s
+E2E
+Exte
+nsio
+n/Pl
+ugin
+is
+inst
+alle
+d
+in
+your
+brow
+serd
+efau
+lt:
+Sear
+ch
+for
+‘Sub
+utai
+‘
+in
+your
+brow
+ser’
+s
+exte
+nsio
+n/pl
+ugin
+stor
+e
+to
+find
+it
+and
+inst
+all.
+defa
+ult:
+defa
+ult:
+Cons
+ole
+URL:
+<cite>htt
+ps:/
+/172
+.16.
+1.12
+1:84
+43 &lt;
+http
+s://
+172.
+16.1
+.121
+:844
+3/&gt;</cite>
+__defa
+ult:
+Defa
+ult
+u/p:
+‘adm
+in’
+/
+‘sec
+ret’
+defa
+ult:
+defa
+ult:
+Vagr
+ant
+ssh
+and
+chan
+ge
+the
+defa
+ult
+‘sub
+utai
+‘/’u
+bunt
+ai’
+user
+pass
+word
+!def
+ault
+:
+If
+you
+forg
+et
+the
+url,
+just
+take
+a
+look
+in
+.vag
+rant
+/gen
+erat
+ed.y
+ml</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>After your peer is created, you can log into it’s management console.
+From the output above you can see the IP based URL of your console.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">default: Console URL:https://172.16.1.121:8443</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Before you log in to the peer console follow the <a class="reference external" href="https://subutai.io/install/index.html#post">Post
+Installation</a> directions
+on installing the browser plugin and generating a PGP key first. Then
+just navigate to this Console URL ( <strong>NOTE</strong> : the IP will most be
+different for your VM) using a web browser. Although we support many
+browsers, Chrome always behaves better than others. The console’s
+default admin password is secret. You will be asked to change it after
+initially being logged in. Once you reset your admin password, you will
+gain entry into the management console UI where you can change many
+aspects of the peer.</p>
+<p>The first thing many users do is register it with the <a class="reference external" href="https://hub.subut.ai/">Subutai
+Hub</a> to easily start sharing resources with
+friends and family. To register your peer find the <strong>“Register”</strong> button
+<img alt="image0" src="data:image/*;base64,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" /> in the upper right hand corner of the UI. When you click this
+button, a dialog will pop up with fields asking you for your Subutai Hub
+login and password. Provide your Hub credentials and push the <img alt="image1" src="data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAdCAYAAAA91+sfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVGhD7ZoxrsIwDEB7v38Pxn8KLsEhOAF/+gNiYmCDEQmpEwuwsJgmaYidumn4LvyAbOlJgE1dPxxYqH7rNUyWU/j6+VYewDgz7iqV93eMu4pLKPmoQCEqUIgKFKIChahAISpQiAoUUrDAFewBYH/gcuUgFDiHzbWZkkQNC7b2UfIELs5N0XnF5l7BKALxkLPjZUSJw3ycQG5z7JA+rjuY3WsbDnWb8OHlR9chdeEDIteGC2y2zOuop/uAQwxt+BBPF2hvGA1gBjsd567WSglDu+ecQPMY1SG4DUz1jHNSnnyEGcFGUjsAkelzvQKj2pauwHTPIgXSCMfLD94JO4B7b55AQ+iF5XQFpnqWvoFWAD5qzDYg8jcQQ1/P2kBE8UeYSmhvuO9XMqrNE+h6pr7TUj3LF9gQ36R9jgLXxzlW4HYHJ5d0QQTQI+uv3dezMIHjYofr29ZC+V+B9siiGHEzXkVRG/iOqEAhKlCIChSiAoWoQCH61w4Bk+UUbpkHUjPTRha5AAAAAElFTkSuQmCC" />
+button. Within 3-10 seconds you should be notified of being logged in.
+The button’s color will change from gray to green <img alt="image2" src="data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAgCAYAAABjGjQoAAADKElEQVR42u2avW/TQBjGO2RmYOofwMScoRsSYgKJoUNAiInONVJGQEwRVaR0adUlkUDeAhlAHcgQqQOIKpUIJFEkkDxUaqUWGjFEMHRAernnYpvr5ezYji/Q+k565di+s+Nfnvfj4lsgogVj6drUDk1n7e7m3q2tyu41W4fZ3ZUnnaNGPjNQ7e6Dp/WBVXR+vKOD0Sct9vHoFW3s3dz6cPD8+oWHOjh5e7XaKZRPf/8k3Y3di6DaCw8VymEqpXk0KBZQv/9ycgZqulCxvWygSg3x8eXgITemOgN1VqhuXPSt2rlDo9NjA3VWpQJs03nGDZ+NUmNC9Vwd5VZYQxjY2d/kfbFVVROZhwpIcG3R1cdw3yvBs4nDRFiQ422mocpxU7ad/Q0eR2FsfGA/gIZq5wn1eLt0P7facrz9dsUq5io9559DhesCnAwJ/VRJCYpks6WJ/oi5Yv9oUHuXynmrkctbzthKTn1IS+ceqgjh9ZdHHOa0hAR46AdobNqrLLWmQh22riwzoOW+MKhfI8BlxwpJoJ6b7A8lH44+c5MTUljdOg1qfdUqLm9/mxjHQDGwNadNtOirz1cyMwFimFL5OXGccE2Vl7Dvsj4XqAAjJiW7u5JOScVVWmowV59swxaxc+SFAdml3R9jPRLUkNBw9kftUXn8fZa0Q0VpJcbPIFdPCJWUUPkDWuSFABkGhxUB3ERo6Ndu+Pv8/rVGW7grG0thak0MFe4tQ8MxVeHvhYWgGZYupYqwYkP1QgD/bNHZ8BAeAmJDBZims+bXqqhRByfNQPC7hy/8sICtKrGlGlPTg0r8un+VuqglUcHF5WJeLOpRm3pqBChVOQV78/UxP5929tcC1f1Ro1YZiZQKcCpYOC5nfOxXOwUlWMy20q5Tw6D6493zkd1f8Jbg6iCFmCrWnkGFf9AsDP3NNDVBkyEjbEDJQRMFAzUEJBKYp0gkqKjvtwzUgCb/J4BYCnUaqDO6P9SK/wQAOM5bWAPVvPgzr6j/u8UU7oNqh4qpbSYWU3jLfvCw3mtnHeZOd20G9l5mFqixpHMba510LVDDtXGPTK36Mxbf/gD2RAh/IH6NKQAAAABJRU5ErkJggg==" />. Your new
+peer will now appear on the Subutai Hub in your peers list.</p>
+<p><strong>Congratulations! You are ready to share resource with your new Subutai
+Peer on the Hub!</strong></p>
+<p>Post-installation</p>
+<p>Post Installation</p>
+<p>Install the client software and tools to use your peers and environments
+effectively. You’re going to want to install the browser extension to
+manage pgp keys, the p2p client, and the OS tray (wallet) application.</p>
+<p>Before logging into the Peer Console, install the Subutai E2E Browser
+Extension for Chrome. It will prompt you to generate a new PGP key after
+installing. See the video below if installation is not obvious.</p>
+<p>Install P2P Daemon and Subutai Control Center</p>
+<p>If you want to manage your Subutai Peers from your Desktop PC, you will
+still need to install two additional softwares: the P2P Daemon and
+Subutai Control Center. The P2P daemon allows systems to join the swarm
+to access private cloud environments. The Control Center allows you to
+conveniently access environments from your desktop, manage your peers
+and check your Goodwill balance.</p>
+<p>Linux Desktop</p>
+<p>We only support Debian based systems right now. Instructions are below:</p>
+<p>Install the P2P Daemon</p>
+<p>Download the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.deb">deb
+package</a>
+and install it with apt:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo apt install /path/to/subutai-p2p.deb</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Install the Subutai Control Center</p>
+<p>Download the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.deb">deb
+package</a>
+and install it with apt:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo apt install /path/to/subutai-tray.deb</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Mac OS</p>
+<p>Install the Subutai P2P Daemon</p>
+<p>Download and install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.pkg">Mac OS
+package</a>.</p>
+<p>Install the Subutai Control Center</p>
+<p>Download and install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.pkg">Mac
+package</a>.</p>
+<p>Windows</p>
+<p>Install the Subutai P2P Daemon</p>
+<p>Install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.msi">MSI package for
+Windows</a>.
+Double click after downloading and follow the instructions.</p>
+<p>Install the Subutai Control Center</p>
+<p>Install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.msi">MSI package for
+Windows</a>.
+Double click after downloading and follow the instructions.</p>
+</div>
+
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-6">
+                            <div id="previuos"><a href="02_Install_PeerOS.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i>Previous</a></div>
+                    </div>
+                    <div class="col-sm-6">
+                            <div id="next" style="text-align: right;"><a href="04_How_to_use_the_Subutai_Console.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i>Next</a></div>    
+                    </div>
+                </div>
+                <br/>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="disqus_thread"></div>
+                        <script>
+
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://subutai-io.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+      <br/>
+
+
+    
+
+    <!-- Section 4 - Community -->
+  <section>
+    <div class="row cont-part5">
+      <div class="container">
+        <div class="text-center">
+          <h1>Community</h1>
+          <h3 style="color: #fff;">We’d love to hear from you!</h3>
+        </div><br><br>
+        <div class="icons-cont-part5">
+          <div class="text-center">
+            <a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/SubutaiCloud" target="_blank" style="margin-top: 5px;">
+                <span class="fab fa-twitter"></span>Twitter
+             </a>
+             <a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com/subutaicloud" target="_blank">
+                <span class="fab fa-facebook"></span>Facebook
+             </a>
+             <a class="btn btn-block btn-social btn-reddit" href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank">
+                <span class="fab fa-reddit"></span>Reddit
+             </a>
+             <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank">
+                <span class="fab fa-linkedin"></span>LinkedIn
+             </a>
+             <a class="btn btn-block btn-social btn-slack" href="//slack.subut.ai" target="_blank" style="background-color: #fff; color: #000;">
+                <span class="fab fa-slack"></span>Slack
+             </a>
+             <a class="btn btn-block btn-social btn-telegram" href="//slack.subut.ai" target="_blank" style="background-color: #2fade7; color: #fff;">
+                <span class="fab fa-telegram"></span>Telegram
+             </a>
+          </div>
+        </div><br/>
+
+        <div class="mailchimp">
+        <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          
+          <style type="text/css">
+            #mc_embed_signup{
+              background: #04192b;
+               clear:left;
+               font:15px 'Maven Pro', sans-serif;;
+               color: #fff;
+             }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          
+          <div id="mc_embed_signup">
+            <form action="https://optdyn.us17.list-manage.com/subscribe/post?u=35361aa6e4a7374ec14c974bc&amp;id=a9787e94b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <br/>
+                      <input style="background-color: #fff;border-color: #078dd0; color: #333;" type="email" placeholder="YOUR EMAIL" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35361aa6e4a7374ec14c974bc_a9787e94b0" tabindex="-1" value=""></div>
+                    <div class="clear"><input style="background-color: #000;margin-top: 4%; height: 43px;" type="submit" value="SIGN UP FOR UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->    
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 - Tribute -->
+  <section>
+    <div class="row cont-part6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h3>Tribute: <a href="internal-pages/tribute.html">Standing on the Shoulders of Giants ></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- row -->
+      <div class="row cont-footer">
+        <footer>
+          <div class="cont-footer">
+            <div class="container" style="padding-top: 20px;">
+              <div class="row" style="">
+                <div class="col-lg-4">
+                  <div class="text-center">
+                    <img src="../../_static/optdyn.png" class="img" alt="Optdyn" width="150">
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <p>Copyright &copy; <span id="currentYear"></span> OptDyn. All rights reserved.</p>
+                    <p><a href="#">Privacy |</a> <a href="#">Terms of Use |</a> <a href="#"> Cookies</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="icons-cont-footer">
+                    <div class="text-center">
+                      <a href="https://twitter.com/SubutaiCloud" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                      <a href="https://www.facebook.com/subutaicloud" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                      <a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                      <a href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div><!-- /row -->
+
+      
+
+    </div>
+    <!-- /container -->
+    <script type="text/javascript">
+        var currentYear = (new Date()).getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+  </body>
+</html>

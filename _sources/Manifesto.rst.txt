@@ -1,0 +1,163 @@
+Manifesto
+=========
+Subutai Manifesto
+=================
+
+|image0|
+
+Using Subutai, we are barbarian hordes knocking on the doors of the
+establishment that tries to control and monitor our systems, harvest our
+activities, and track our relations. We are sick and tired of vendor
+lock-in, and unpleasant end-of-the-month surprises from the big cloud
+providers. We do not want to be beholden to institutions, corporations
+or foreign governments’ laws. We do not want to be at the mercy of
+hackers or closed source commercial software with backdoors. We want a
+safe and productive existence on the greatest digital silk road, the
+Internet, which should empower us all, even those trying to make a buck.
+
+Collectively strengthened with open technologies including Peer-to-Peer
+(P2P) Cloud Computing, and Blockchain, the horde possesses enough
+resources to surpass the power of a million Amazons and Googles while
+decentralizing control. We are all “Dogs of War”. We are ready to do
+battle for our independence and our privacy. Become one of us, come join
+us as we make plans to dominate the world in the `*War
+Room* <https://hub.subut.ai/>`__.
+
+Illustration contributed to the Subutai Project by
+`*Phobs* <http://phobs-heh.tumblr.com/post/24766795135/fuck-yeah-subutai-i-dont-even-sorry-its-100>`__.
+
+History shows us that great power can be unleashed by meritocracy,
+tolerance, and sharing. The decision by Genghis Khan to depart from
+Mongol tradition and make a non-Mongol slave, Subutai, the General of
+his armies gave birth to the largest empire in all of human history. The
+hordes were given first rights to the plunder of every campaign instead
+of it being hoarded by a single individual. The Khan shared the spoils
+of war. No matter how inhuman, and brutal they were to their enemies in
+battle, once conquered all who joined the horde enjoyed religious, and
+ethnic tolerance with the very same rules of meritocracy that allowed a
+slave to become the greatest general ever in history. Without these
+principles the tiny fraction of the population who were ethnic Mongols
+would never have been able to conquer as much as they did.
+
+|image1|
+
+**“Disclaimer”**
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Note: Disclaimer**\ |image2|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| None of us are Mongolian, in fact, all of the Asian members of our team probably had their ancestors literally brutalized `*by Genghis Khan* <https://www.nature.com/news/genghis-khan-s-genetic-legacy-has-competition-1.16767>`__. We don’t care about stuff that happened a thousand years ago. Bottom line, this guy was the greatest general of all time. His empire’s horsemen epitomized the unstoppable warrior spirit of the times that rampaged through all of Asia. We like the epic notions that epoch inspires. So we did not select the name for any ethnic reasons. Subutai was an amazing figure and story. If we can live with that, so can everyone else. If you’re a creme puff offended by that, sorry, but we can’t change our spirit to accommodate your sensitivity.   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| However to be respectful, even to ourselves, we do recognize that the Mongol empire under Genghis Khan did some very atrocious things. In no way, shape, or form do we condone them. They tragically killed and ruined millions of lives at the time. Until the conquered were subjugated and assimilated they were brutalized. Those who did not submit were completely wiped off the face of the earth. They destroyed entire civilizations. We consciously do not honor the brutality as the reason for their success. We think it was the opposite, or rather the contrast between being an opponent versus an ally accepted after a good fight with the benefits of sharing, tolerance, and meritocracy that unleashed their power to conquer all of Asia.                               |
++===============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+We chose Subutai, this slave that became the world’s greatest general,
+as our project’s namesake. We believe his life and achievements
+epitomize the results of our common principles: meritocracy, tolerance,
+and sharing. No one is entitled by merely existing as a part of a mass.
+You must earn your place through battle. We’ve seen many projects suffer
+and die because meritocracies turn into lame democracies. Talkers,
+politician types, infiltrate to benefit from their status in the project
+rather than contributing to its success. When the numbers of these types
+grow they turn the project into a septic where no honorable warrior
+spirit in search of conquest enjoys participating anymore. We will have
+none of that. We all share in the plunder based on meritocracy while
+being tolerant of everyone regardless of race, religion, or sexual
+orientation of any kind.
+
+These principles do not only apply to Subutai’s governance rules, and
+community culture but to its flagship open source product. The nature of
+the product feeds back into these core principles to strengthen and
+expand the community. Subutai empowers the horde by allowing anyone to
+securely share idle computer resources across the Internet with other
+participants. With Subutai, friends, family, colleagues, and even
+companies can create their own private data centers (infrastructure
+clouds). They can even buy and sell resources using Subutai’s Goodwill
+and KHAN cryptocurrency tokens. Software and applications install and
+run on Linux hosts (containers) in the virtual data center’s private
+network. Cloud owners pay for resources as their container hosts consume
+them: it’s the Container-as-a-Service (CaaS) model with hourly billing
+between parties.
+
+Attacking one of us will be like attacking all of us. The horde’s
+collective defense system will allow all participants to counter-attack
+when any other members are attacked. Governments are not doing anything
+significant to protect us online while using our own tax dollars to
+invade our privacy. It’s time we took matters into our own hands. With a
+little computation and bandwidth from each of the millions of
+participants, we will have the ability to aggregate enough firepower to
+blow attackers off the Internet, and burn their operation down to the
+ground. Don’t mess with us! We fight back!
+
+Still, the great Khan respected, some say loved strong opponents. He
+specifically invited past enemies that fought valiantly into the fold of
+the empire. Subutai incentivises hackers to do good through rewards and
+bounty programs. Why? Because they are bad asses like us. Respect! Why
+steal when you can just get rewarded for doing what you do best? Subutai
+helps make black hackers into white hackers to help protect the KHAN.
+
+We are lunatics, so we did not stop at software. We want to be epic or
+die trying. No one here wants to be a puppet subordinating to the man.
+So we built a broadband router and IoT gateway that mines for KHAN
+cryptocurrency (hence it is also a physical wallet) called the Subutai
+Liquid Router. We want everyone to participate, not just us geeks.
+Everyone that helps should share in the plunder. We knew a device that
+lets residential Internet subscribers mine coins and pays for itself in
+cryptocurrency would be irresistable. Everyone wants to participate in
+the cryptocurrency economy, and Subutai lets them. The router hardware
+is an accelerated plug-n-play Subutai Appliance, which lets users easily
+and securely share or rent resources on their local area network to
+anyone else.
+
+|image3|
+
+We’re not messing around.
+
+We don’t want Subutai becoming just a techie niche platform.
+Non-technical residential Internet users at home or those trying to run
+small businesses on a budget need to be able to fire up cloud and IoT
+applications as easily as they install iPhone apps from Apple’s App
+Store today. Subutai enables and rewards both users and application
+developers by ensuring a rich ecosystem of open source applications to
+flourish. Application developers can package their apps as Dockerized
+applications and as Google AppEngine applications for users to pull down
+from the Subutai Bazaar and run on their P2P Clouds.
+
+Open source software and hardware is very important to us. We want more
+and better products to benefit home users and small businesses. We
+created an open source contribution program where people can contribute
+resources to GitHub projects. In return for resources to test their
+products and run project infrastructure, open source projects create
+blueprints for applications. These applications are made publically
+available on the Subutai Bazaar for anyone to fire up on their personal
+cloud. Those contributing computer resources to open source projects get
+credit for their contributions and earn Goodwill on the platform to
+purchase resources from others. This is a win-win-win, a grand slam for
+everyone.
+
+When anyone can run cloud applications, consume, and provide cloud
+services in a safe and productive environment, a cloud sharing economy
+emerges, and its disruptive effects will benefit everyone by
+accelerating the race to zero. We want billions of mini-Amazons popping
+up all over the world. We want to stop the needless waste of electricity
+on idle computers and help the environment by requiring less power
+hungry data centers. We want clouds to be able to be efficient by
+running closer to user load. We want the Internet to be a better place
+for personal and business computing. ***Mercilessly, we want to take
+back the cloud!***
+
+`*How can I help?* <http://www.dictionary.com/browse/bogus>`__
+
+.. |image0| image:: media/image8.jpg
+   :width: 2.45833in
+   :height: 4.36458in
+.. |image1| image:: media/image4.jpg
+   :width: 6.50000in
+   :height: 4.87500in
+.. |image2| image:: media/image5.png
+   :width: 0.12500in
+   :height: 0.12500in
+.. |image3| image:: media/image7.png
+   :width: 6.50000in
+   :height: 3.63889in

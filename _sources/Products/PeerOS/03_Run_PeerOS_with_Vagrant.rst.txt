@@ -1,0 +1,340 @@
+Run PeerOS With Vagrant
+=======================
+The easiest and quickest way to get a Subutai Peer running on any
+platform is to use Vagrant with VirtualBox. Don't use package managers
+to install them: their versions are too old. Download the latest
+`Vagrant 2.0.1 <https://www.vagrantup.com/downloads.html>`__ or higher
+and `VirtualBox 5.1.0 <https://www.virtualbox.org/wiki/Downloads>`__ or
+higher from their respective websites. Once Vagrant and VirtualBox are
+installed init the Vagrantfile then up the instance like so:
+
+**1.1 This command creates a Subutai Peer VM based on Debian 9.x.
+(Recommended):**
+
++-----+------------------------------------------+
+| 1   | vagrant init --minimal subutai/stretch   |
++=====+==========================================+
++-----+------------------------------------------+
+
+**1.2 This command creates a Subutai Peer VM based on Ubuntu Server
+16.04.3. :**
+
++-----+-----------------------------------------+
+| 1   | vagrant init --minimal subutai/xenial   |
++=====+=========================================+
++-----+-----------------------------------------+
+
+**2. For Vagrant you will need to install the** **subutai** **and**
+**vbguest** **plugins:**
+
++------+------+
+| 12   | vagr |
+|      | ant  |
+|      | plug |
+|      | in   |
+|      | inst |
+|      | all  |
+|      | vagr |
+|      | ant- |
+|      | subu |
+|      | taiv |
+|      | agra |
+|      | nt   |
+|      | plug |
+|      | in   |
+|      | inst |
+|      | all  |
+|      | vagr |
+|      | ant- |
+|      | vbgu |
+|      | est  |
++======+======+
++------+------+
+
+**3. Once plugin is installed, you can create and start the Subutai Peer
+VM:**
+
++-----+--------------+
+| 1   | vagrant up   |
++=====+==============+
++-----+--------------+
+
+During this process you will be asked for which bridge interface you
+want to use. The first option provided by Vagrant is usually the right
+one: the network interface that is actively being used to get on the
+Internet.
+
+Congratulations! You have a Peer!
+
+After a lot of output you'll see output similar (your console's IP
+address might be different) to the following:
+
++------+------+
+| 1234 | defa |
+| 5678 | ult: |
+| 9101 | defa |
+| 1121 | ult: |
+| 3    | SUCC |
+|      | ESS: |
+|      | Your |
+|      | peer |
+|      | is   |
+|      | up.  |
+|      | Welc |
+|      | ome  |
+|      | to   |
+|      | the  |
+|      | Hord |
+|      | e!de |
+|      | faul |
+|      | t:   |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---- |
+|      | ---d |
+|      | efau |
+|      | lt:d |
+|      | efau |
+|      | lt:  |
+|      | Next |
+|      | step |
+|      | s    |
+|      | ...d |
+|      | efau |
+|      | lt:  |
+|      | Make |
+|      | sure |
+|      | Subu |
+|      | tai' |
+|      | s    |
+|      | E2E  |
+|      | Exte |
+|      | nsio |
+|      | n/Pl |
+|      | ugin |
+|      | is   |
+|      | inst |
+|      | alle |
+|      | d    |
+|      | in   |
+|      | your |
+|      | brow |
+|      | serd |
+|      | efau |
+|      | lt:  |
+|      | Sear |
+|      | ch   |
+|      | for  |
+|      | 'Sub |
+|      | utai |
+|      | '    |
+|      | in   |
+|      | your |
+|      | brow |
+|      | ser' |
+|      | s    |
+|      | exte |
+|      | nsio |
+|      | n/pl |
+|      | ugin |
+|      | stor |
+|      | e    |
+|      | to   |
+|      | find |
+|      | it   |
+|      | and  |
+|      | inst |
+|      | all. |
+|      | defa |
+|      | ult: |
+|      | defa |
+|      | ult: |
+|      | Cons |
+|      | ole  |
+|      | URL: |
+|      | `htt |
+|      | ps:/ |
+|      | /172 |
+|      | .16. |
+|      | 1.12 |
+|      | 1:84 |
+|      | 43 < |
+|      | http |
+|      | s:// |
+|      | 172. |
+|      | 16.1 |
+|      | .121 |
+|      | :844 |
+|      | 3/>` |
+|      | __\  |
+|      | defa |
+|      | ult: |
+|      | Defa |
+|      | ult  |
+|      | u/p: |
+|      | 'adm |
+|      | in'  |
+|      | /    |
+|      | 'sec |
+|      | ret' |
+|      | defa |
+|      | ult: |
+|      | defa |
+|      | ult: |
+|      | Vagr |
+|      | ant  |
+|      | ssh  |
+|      | and  |
+|      | chan |
+|      | ge   |
+|      | the  |
+|      | defa |
+|      | ult  |
+|      | 'sub |
+|      | utai |
+|      | '/'u |
+|      | bunt |
+|      | ai'  |
+|      | user |
+|      | pass |
+|      | word |
+|      | !def |
+|      | ault |
+|      | :    |
+|      | If   |
+|      | you  |
+|      | forg |
+|      | et   |
+|      | the  |
+|      | url, |
+|      | just |
+|      | take |
+|      | a    |
+|      | look |
+|      | in   |
+|      | .vag |
+|      | rant |
+|      | /gen |
+|      | erat |
+|      | ed.y |
+|      | ml   |
++======+======+
++------+------+
+
+After your peer is created, you can log into it's management console.
+From the output above you can see the IP based URL of your console.
+
++-----+--------------------------------------------------+
+| 1   | default: Console URL:https://172.16.1.121:8443   |
++=====+==================================================+
++-----+--------------------------------------------------+
+
+Before you log in to the peer console follow the `Post
+Installation <https://subutai.io/install/index.html#post>`__ directions
+on installing the browser plugin and generating a PGP key first. Then
+just navigate to this Console URL ( **NOTE** : the IP will most be
+different for your VM) using a web browser. Although we support many
+browsers, Chrome always behaves better than others. The console's
+default admin password is secret. You will be asked to change it after
+initially being logged in. Once you reset your admin password, you will
+gain entry into the management console UI where you can change many
+aspects of the peer.
+
+The first thing many users do is register it with the `Subutai
+Hub <https://hub.subut.ai/>`__ to easily start sharing resources with
+friends and family. To register your peer find the **"Register"** button
+|image0| in the upper right hand corner of the UI. When you click this
+button, a dialog will pop up with fields asking you for your Subutai Hub
+login and password. Provide your Hub credentials and push the |image1|
+button. Within 3-10 seconds you should be notified of being logged in.
+The button's color will change from gray to green |image2|. Your new
+peer will now appear on the Subutai Hub in your peers list.
+
+**Congratulations! You are ready to share resource with your new Subutai
+Peer on the Hub!**
+
+Post-installation
+
+Post Installation
+
+Install the client software and tools to use your peers and environments
+effectively. You're going to want to install the browser extension to
+manage pgp keys, the p2p client, and the OS tray (wallet) application.
+
+Before logging into the Peer Console, install the Subutai E2E Browser
+Extension for Chrome. It will prompt you to generate a new PGP key after
+installing. See the video below if installation is not obvious.
+
+Install P2P Daemon and Subutai Control Center
+
+If you want to manage your Subutai Peers from your Desktop PC, you will
+still need to install two additional softwares: the P2P Daemon and
+Subutai Control Center. The P2P daemon allows systems to join the swarm
+to access private cloud environments. The Control Center allows you to
+conveniently access environments from your desktop, manage your peers
+and check your Goodwill balance.
+
+Linux Desktop
+
+We only support Debian based systems right now. Instructions are below:
+
+Install the P2P Daemon
+
+Download the `deb
+package <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.deb>`__
+and install it with apt:
+
++-----+---------------------------------------------+
+| 1   | sudo apt install /path/to/subutai-p2p.deb   |
++=====+=============================================+
++-----+---------------------------------------------+
+
+Install the Subutai Control Center
+
+Download the `deb
+package <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.deb>`__
+and install it with apt:
+
++-----+----------------------------------------------+
+| 1   | sudo apt install /path/to/subutai-tray.deb   |
++=====+==============================================+
++-----+----------------------------------------------+
+
+Mac OS
+
+Install the Subutai P2P Daemon
+
+Download and install the `Mac OS
+package <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.pkg>`__.
+
+Install the Subutai Control Center
+
+Download and install the `Mac
+package <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.pkg>`__.
+
+Windows
+
+Install the Subutai P2P Daemon
+
+Install the `MSI package for
+Windows <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.msi>`__.
+Double click after downloading and follow the instructions.
+
+Install the Subutai Control Center
+
+Install the `MSI package for
+Windows <https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.msi>`__.
+Double click after downloading and follow the instructions.
+
+.. |image0| image:: data:image/*;base64,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
+.. |image1| image:: data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAdCAYAAAA91+sfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVGhD7ZoxrsIwDEB7v38Pxn8KLsEhOAF/+gNiYmCDEQmpEwuwsJgmaYidumn4LvyAbOlJgE1dPxxYqH7rNUyWU/j6+VYewDgz7iqV93eMu4pLKPmoQCEqUIgKFKIChahAISpQiAoUUrDAFewBYH/gcuUgFDiHzbWZkkQNC7b2UfIELs5N0XnF5l7BKALxkLPjZUSJw3ycQG5z7JA+rjuY3WsbDnWb8OHlR9chdeEDIteGC2y2zOuop/uAQwxt+BBPF2hvGA1gBjsd567WSglDu+ecQPMY1SG4DUz1jHNSnnyEGcFGUjsAkelzvQKj2pauwHTPIgXSCMfLD94JO4B7b55AQ+iF5XQFpnqWvoFWAD5qzDYg8jcQQ1/P2kBE8UeYSmhvuO9XMqrNE+h6pr7TUj3LF9gQ36R9jgLXxzlW4HYHJ5d0QQTQI+uv3dezMIHjYofr29ZC+V+B9siiGHEzXkVRG/iOqEAhKlCIChSiAoWoQCH61w4Bk+UUbpkHUjPTRha5AAAAAElFTkSuQmCC
+.. |image2| image:: data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAgCAYAAABjGjQoAAADKElEQVR42u2avW/TQBjGO2RmYOofwMScoRsSYgKJoUNAiInONVJGQEwRVaR0adUlkUDeAhlAHcgQqQOIKpUIJFEkkDxUaqUWGjFEMHRAernnYpvr5ezYji/Q+k565di+s+Nfnvfj4lsgogVj6drUDk1n7e7m3q2tyu41W4fZ3ZUnnaNGPjNQ7e6Dp/WBVXR+vKOD0Sct9vHoFW3s3dz6cPD8+oWHOjh5e7XaKZRPf/8k3Y3di6DaCw8VymEqpXk0KBZQv/9ycgZqulCxvWygSg3x8eXgITemOgN1VqhuXPSt2rlDo9NjA3VWpQJs03nGDZ+NUmNC9Vwd5VZYQxjY2d/kfbFVVROZhwpIcG3R1cdw3yvBs4nDRFiQ422mocpxU7ad/Q0eR2FsfGA/gIZq5wn1eLt0P7facrz9dsUq5io9559DhesCnAwJ/VRJCYpks6WJ/oi5Yv9oUHuXynmrkctbzthKTn1IS+ceqgjh9ZdHHOa0hAR46AdobNqrLLWmQh22riwzoOW+MKhfI8BlxwpJoJ6b7A8lH44+c5MTUljdOg1qfdUqLm9/mxjHQDGwNadNtOirz1cyMwFimFL5OXGccE2Vl7Dvsj4XqAAjJiW7u5JOScVVWmowV59swxaxc+SFAdml3R9jPRLUkNBw9kftUXn8fZa0Q0VpJcbPIFdPCJWUUPkDWuSFABkGhxUB3ERo6Ndu+Pv8/rVGW7grG0thak0MFe4tQ8MxVeHvhYWgGZYupYqwYkP1QgD/bNHZ8BAeAmJDBZims+bXqqhRByfNQPC7hy/8sICtKrGlGlPTg0r8un+VuqglUcHF5WJeLOpRm3pqBChVOQV78/UxP5929tcC1f1Ro1YZiZQKcCpYOC5nfOxXOwUlWMy20q5Tw6D6493zkd1f8Jbg6iCFmCrWnkGFf9AsDP3NNDVBkyEjbEDJQRMFAzUEJBKYp0gkqKjvtwzUgCb/J4BYCnUaqDO6P9SK/wQAOM5bWAPVvPgzr6j/u8UU7oNqh4qpbSYWU3jLfvCw3mtnHeZOd20G9l5mFqixpHMba510LVDDtXGPTK36Mxbf/gD2RAh/IH6NKQAAAABJRU5ErkJggg==
+

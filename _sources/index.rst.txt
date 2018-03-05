@@ -1,0 +1,73 @@
+Subutai Documentation
+=====================
+
+Join the Subutai Horde! Be part of the P2P Cloud Crowd.
+
+.. _1:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: General
+
+   About <About.rst>
+   Bazaar Quick Start <Bazaar_Quick_Start.rst>
+   FOSS Contribution Program <FOSS_Contribution_Program.rst>
+   Glossary <Glossary.rst>
+   Manifesto <Manifesto.rst>
+   Peer Quick Start <Peer_Quick_Start.rst>
+   Roadmap <Roadmap.rst>
+   Support <Support.rst>
+
+.. _2:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Subutai Products
+
+   PeerOS <Products/PeerOS_toctree.rst>
+   Blockchain Router <Products/Router_toctree.rst>
+   Bazaar <Products/Bazaar_toctree.rst>
+
+.. _3:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Community
+
+   Contributing <contributing>
+   Roadmap <Roadmap>
+   Support <Support>
+   Team <team>
+
+.. _4:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Resources
+   
+   Resources <Resources/Resources_toctree.rst>
+
+.. _5:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: GitHub Projects
+
+   Bazaar API <Projects/bazaar_toctree.rst>
+   PeerOS Agent <Projects/agent_toctree.rst>
+   PeerOS Console <Projects/peer-os_toctree.rst>
+   PeerOS Snap <Projects/snap_toctree.rst>
+   Peer-to-Peer Daemon <Projects/p2p_toctree.rst>
+   PeerOS Plugins <Projects/peer-os-plugins_toctree.rst>
+   Router Hardware <Projects/router_toctree.rst>
+   CDN Server <Projects/cdn_toctree.rst>
+   Browser Plugins <Projects/browser-plugins_toctree.rst>
+   Control Center <Projects/control-center_toctree.rst>
+   Packer Vagrant Boxes <Projects/packer_toctree.rst>
+   Vagrant Plugin <Projects/vagrant_toctree.rst>
+   Ansible Module <Projects/ansible_toctree.rst>
+   Read The Docs <Projects/readthedocs_toctree.rst>
+   Read The Docs <Projects/hackathon_toctree.rst>
+   The Subutron <Projects/subutron_toctree.rst> 
+   Test Playbooks <Projects/playbooks_toctree.rst>
+

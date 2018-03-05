@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Subutai  &mdash; Subutai Documentation v6.x</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Subutai helps connect individuals from all over the globe so they may share resources to create secure cloud environments across their peers. Just as a cloud can float down onto land and is thus called fog, IoT devices attach when available and needed to your cloud as it floats around with you.">
+    <meta name="author" content="Optdyn Corporation">
+    <meta name="keywords" content="Optdyn, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT">
+
+    <!--Custom CSS from J&J-->
+    <link rel="stylesheet" href="../../_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customcss/bootstrap-social.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../../_static/fontawesome/fontawesome-all.css" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../../_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/customcss/bootstrap-social.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/fontawesome/fontawesome-all.css" type="text/css" />
+
+    
+
+<link rel="stylesheet" href="../../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+
+
+
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+
+<link rel="stylesheet" href="../../_static/custom/styles.css" type="text/css" />
+<link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../../',
+            VERSION:     '6.4',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    
+    <link rel="icon" type="image/png"  href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="Subutai Documentation v6.x" href="../../index.html" />
+    <link rel="up" title="Subutai PeerOS" href="../PeerOS_toctree.html" />
+    <link rel="next" title="Run PeerOS With Vagrant" href="03_Run_PeerOS_with_Vagrant.html" />
+    <link rel="prev" title="What Is The PeerOS" href="01_What_is_the_PeerOS.html" /> 
+  </head>
+  <body role="document" style="font-family: 'Maven Pro' sans-serif;">
+
+
+    <nav class="row navbar navbar-inverse navbar-fixed-top" style="">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="logo" src="../../_static/logo.png" width="160"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #000;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="internal-pages/p2p-cloud-platform.html" ><h4 style="font-size: 14px; color: #fff; font-weight: 700;">P2P Cloud Platform</h4></a></li>
+          <li><a href="internal-pages/goodwill.html"><h4 style="font-size: 14px; color: #fff; font-weight: 700;">GoodWill</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Ideation<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="internal-pages/p2p-cloud.html"><h4 style="font-size: 14px; font-weight: 700;">P2P Cloud</h4></a></li>
+                  <li><a href="internal-pages/manifesto.html"><h4 style="font-size: 14px; font-weight: 700;">Manifesto</h4></a></li>
+                  <li><a href="https://subutai.blog/"><h4 style="font-size: 14px; font-weight: 700;">Blog</h4></a></li>
+                  <li><a href="internal-pages/tribute.html"><h4 style="font-size: 14px; font-weight: 700;">Tribute</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA"><h4 style="font-size: 14px; font-weight: 700;">Presentation</h4></a></li>
+                  <li><a href="https://docs.subutai.io/glossary.html" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Glossary</h4></a></li>
+                </ul>
+              </li>
+
+          <li><a href="https://docs.subutai.io/attic/Peer/getting-started.html" target="_blank"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Getting Started</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Resources<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://github.com/subutai-io" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">GitHub</h4></a></li>
+                  <li><a href="internal-pages/faq.html"><h4 style="font-size: 14px; font-weight: 700;">FAQ</h4></a></li>
+                  <li><a href="https://github.com/subutai-blueprints" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Blueprints</h4></a></li>
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://subutai.blog/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Use Cases</h4></a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Community<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://slack.subut.ai/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Slack</h4></a></li>
+                  <li><a href="https://telegram.org/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Telegram</h4></a></li>
+                  <li><a href="https://twitter.com/SubutaiCloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Twitter</h4></a></li>
+                  <li><a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Reddit</h4></a></li>
+                  <li><a href="https://www.facebook.com/subutaicloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Facebook</h4></a></li>
+                  <li><a href="https://www.linkedin.com/company/subutai-social-cloud/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Linkedin</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Youtube</h4></a></li>
+                </ul>
+              </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- container -->
+    <div class="container-fluid">
+      
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Install PeerOS</a><ul>
+<li><a class="reference internal" href="#id1">|</a></li>
+<li><a class="reference internal" href="#id2">|</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="01_What_is_the_PeerOS.html"
+                        title="previous chapter">What Is The PeerOS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="03_Run_PeerOS_with_Vagrant.html"
+                        title="next chapter">Run PeerOS With Vagrant</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Products/PeerOS/02_Install_PeerOS.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../../search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="install-peeros">
+<h1>Install PeerOS<a class="headerlink" href="#install-peeros" title="Permalink to this headline">¶</a></h1>
+<p>This is the recommended way of installing Subutai PeerOS, using Snappy
+in a fresh system. Alternatively, you can try the Vagrant version to a
+quick or demo install, running the PeerOS virtualized alongside your
+preferred operating system.</p>
+<p>PeerOS Installation</p>
+<p>Subutai is based on Snappy, and has its own snap package in the Ubuntu
+One Store. Installing the Subutai Snap package on a snapd supported (see
+the support matrix) operating system enables the host as a Subutai
+Resource Host (RH) . Importing a special container, named “management”,
+automatically installs the Subutai Management Console into the RH
+turning it into a Subutai Peer</p>
+<ol class="arabic simple">
+<li>Before you start</li>
+</ol>
+<p>Warning: don’t forget the extra disk or partition!</p>
+<p>Many people have an, “Oh #F$&amp;D&#64;)# !” moment when further down in the
+directions they realize an extra storage device is needed. Several
+configure a VM or a new machine forgetting to add the disk, partition,
+or volume. So, don’t forget. Read the hardware requirements carefully
+before starting.</p>
+<p>Warning: don’t use firefox. Stick to chrome.</p>
+<p>Before logging into a peer console you’ll want to install the Subutai
+Chrome extension. We’ve temporarily stopped supporting Firefox because
+of changes to their extensions API, and have yet to provide support for
+Edge. Chrome and Safari are the only two supported browsers right now.</p>
+<p>Don’t freak out about email or social networking accounts</p>
+<p>We use your email and social network accounts for verification and for
+your unique username identifier. Don’t think we’re going to spam you, or
+start sending invites to your friends. This is totally against our
+policies.</p>
+<p>Hardware Requirements</p>
+<p>Unlimited hardware configuration options are possible. However, if
+setting up a trial peer with a single RH we recommend running it on a
+virtual machine with at least:</p>
+<ul class="simple">
+<li>2 or more CPU cores</li>
+<li>2G of RAM (8G + best)</li>
+<li>2 disks or partitions, one for the operating system &gt; 10G, and one
+for container storage &gt; 100G</li>
+<li>1 network adapter 1Gbit (bridged)</li>
+</ul>
+<p>Don’t forget the extra disk or partition!</p>
+<p>Any hypervisor or cloud provider instance may be used so long as these
+virtual hardware resources are available to the guest operating system.
+Peers can run on Hyper-V, GCE, AWS, KVM, VirtualBox, VMWare, and
+Parallels. A virtual machine is not absolutely necessary, but a
+convenient approach. A peer can be installed on an existing physical
+host with full security and isolation without a VM. In this case,
+similar hardware requirements apply to the existing physical host.</p>
+<p>Operating System Requirements</p>
+<p><strong>Some general caveats and requirements for the operating system on
+which the snap package is being installed are:</strong></p>
+<hr class="docutils" />
+<ul class="simple">
+<li>Using a freshly installed operating system is preferable,</li>
+<li>The operating system should have snapd installed and updated,</li>
+<li>All system components should be updated to the latest available
+version including system libraries and the kernel</li>
+<li>Avoid installing any additional components on the system,</li>
+<li>Avoid desktop distributions due to NetworkManager’s dnsmask running
+on port 53</li>
+<li>The system should have network connectivity (via a bridge if virtual)</li>
+<li>A DHCP service should be present on the LAN to acquire an IP address</li>
+<li>Check that the required network ports listed below are not used (i.e.
+sudo lsof -i :53) before installing the snap:</li>
+<li>udp/53 - DNS service port</li>
+<li>udp/67 - DHCP service port</li>
+<li>tcp/80 - Web service port</li>
+<li>tcp/443 - Secure web service port</li>
+<li>udp/1900 - Service discovery service port</li>
+<li>udp/6881 - P2P service port</li>
+<li>tcp/8086 - Metrics service port</li>
+<li>tcp/8443 - Subutai Management Console web service port</li>
+<li>tcp/8444 - Subutai Management LAN communication service port</li>
+</ul>
+<p>Using a guest virtual machine allows for maximum flexibility to install
+a stock unmodified guest VM operating system and reduces complications.
+Ubuntu Server 16.04.3 or 17.04 operating systems are best: they come
+pre-installed with snapd. Debian is also a good candidate, but the snapd
+package needs to be installed:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo apt-get install snapd</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>The snap has been tested on the following operating systems:</p>
+<ul class="simple">
+<li>Ubuntu core 16</li>
+<li>Ubuntu Server: 16.04.3 and 17.04</li>
+<li>Debian 9.1.0 - Stretch</li>
+</ul>
+<p><strong>NOTE:</strong> All the desktop editions and other headed configurations (in
+bold red) have the NetworkManager problem, and the non-Ubuntu
+distributions need snapd installed. Debian Stretch (headless) needs
+snapd installed. See the warnings below about NetworkManager if you’re
+installing the snap on a desktop system with NetworkManager (most
+likely) installed. See the “Disable dnsmasq on desktop editions!”
+section below.</p>
+<ol class="arabic simple" start="2">
+<li>Install the Snap Package</li>
+</ol>
+<p>Warning: disable dnsmasq on desktop editions!</p>
+<p>Virtual or not, desktop editions should be avoided. Besides
+unnecessarily wasting resources for the windowing system they use
+NetworkManager which installs dnsmasq on port 53. If on a desktop
+edition, check to see if port 53 is already bound:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo lsof -i :53</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Any output from lsof means port 53 is being used. You’ll need to stop
+dnsmasq permanently. Here’s how:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">12</th>
+<th class="head">sudo
+syst
+emct
+l
+disa
+ble
+syst
+emd-
+reso
+lved
+.ser
+vice
+sudo
+serv
+ice
+syst
+emd-
+reso
+lved
+stop</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Edit /etc/NetworkManager/NetworkManager.conf and change the dns property
+in the [main] section so it is set todefault:dns=default. Here’s how the
+file may look after adding or modifying the dns property:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">12345</th>
+<th class="head">[main]plugins=ifupdown, keyfiledns=default[ifupdown]managed=false</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">123</th>
+<th class="head">sudo
+rm
+/etc
+/res
+olv.
+conf
+sudo
+serv
+ice
+netw
+ork-
+mana
+ger
+rest
+arts
+udo
+kill
+all
+dnsm
+asq</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The last killall, is a precaution, don’t freak if it says, “no such
+process”.</strong></p>
+<p>Another lsof for port 53 should not produce any output now. <strong>NOTE:</strong> if
+NetworkManager was not configured properly, after restart, you may need
+to add your nameserver into the /etc/resolv.conf file it generates. It’s
+best to add this to the NetworkManager connection configuration if you
+don’t want the resolv.conf file to be overwritten.</p>
+<p>Warning: is snapd installed?</p>
+<p>Before installing the Subutai Snap you may need to install snapd. Try to
+list your snaps with snap to see if it is installed:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">snap list</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Installing snapd is beyond the scope of this document. However, here are
+some useful commands for installing and setting up snapd on non-Ubuntu
+Linux distributions:</p>
+<ul class="simple">
+<li>Mint, Debian:</li>
+</ul>
+<div class="section" id="id1">
+<h2>|<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>1 |</li>
+<li></li>
+<li>sudo apt-get install snapd | | — | — |</li>
+<li>Fedora 24:</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>|<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>1 |</li>
+<li></li>
+<li>sudo dnf install snapd &amp;&amp; sudo systemctl enable –now snapd.socket |
+| — | — |</li>
+</ul>
+<p>If snapd is properly installed, and up to date, then carry on to install
+the Subutai Snap package.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">12</th>
+<th class="head">sudo snap install subutai –beta –devmodesnap list</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Warning: possible installation problems</p>
+<p>On non-Ubuntu Core distributions this might cause the core snap to be
+downloaded as well as the Subutai Snap which depends on it. Ubuntu Core
+comes with the core snap already installed. Don’t be surprised to see
+this other core snap getting downloaded and installed.</p>
+<p>Is the snap installed? The last command after installation checks that
+the package is installed. You should see similar output from it:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1234
+5</th>
+<th class="head">ubun
+tu&#64;t
+estb
+ox:~
+$
+snap
+list
+Name
+Vers
+ion
+Rev
+Deve
+lope
+r
+Note
+scor
+e
+16-2
+.27.
+5
+2774
+cano
+nica
+l
+core
+subu
+tai
+5.0.
+2
+183
+devm
+odeu
+bunt
+u-im
+age
+0.12
++rea
+l1
+44
+cano
+nica
+l
+devm
+ode</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>There are known problems with certain hypervisors and bridged networking
+over WiFi connections. If you’re having connectivity issues after snap
+installation please see the VM Wifi workaround.</p>
+<p>The snap package comes with the p2p daemon which uses UDP port 6881. If
+you previously installed the p2p daemon package to connect to your cloud
+environments, then you’ll have a port conflict. You’ll need to stop and
+remove the p2p daemon package.</p>
+<p>Some distributions do not immediately update paths on snap package
+installation. If you don’t see the command subutai on the path, it
+should be visible after a logout and login.</p>
+<ol class="arabic simple" start="3">
+<li>Set up container storage</li>
+</ol>
+<p>Warning: storage block device</p>
+<p>Do not forget to use your appropriate block device in place of
+/dev/your_block_device. It can be a disk, a partition, a iSCSI target
+LUN, or an LVM logical volume. It just needs to be a block device. It
+should have over 100G to allow for at least one HUGE container to be
+used on it.</p>
+<p>Containers storage is created on this block device. By default, Subutai
+uses BTRFS but can use other copy-on-write filesystems like ZFS. The
+following command creates a BTRFS file system on the block device and
+mounts it.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo /snap/subutai/current/bin/btrfsinit /dev/your_block_device</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Congratulations! You have a Resource Host!</p>
+<p>Now you should see the block device mounted:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">123</th>
+<th class="head">subu
+tai&#64;
+ud17
+04s:
+~$
+df
+-h
+/var
+/sna
+p/su
+buta
+i/co
+mmon
+/lxc
+File
+syst
+em
+Size
+Used
+Avai
+l
+Use%
+Moun
+ted
+on/d
+ev/m
+appe
+r/ud
+1704
+-btr
+fs
+94G
+17M
+92G
+1%
+/var
+/sna
+p/su
+buta
+i/co
+mmon
+/lxc</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>You can use this same process to create more RHs and add them to peers.
+RHs must be on the same LAN. The process to add a RH uses the Simple
+Service Discovery Protocol. RHs that are not bound to a peer on the
+network announce their availability. The peer console will show the RH
+and the admin can use an authorization process to approve adding the RH
+to the peer.</p>
+<ol class="arabic simple" start="4">
+<li>Import the Management Container</li>
+</ol>
+<p>Now that the Subutai Snap package is installed, and you have an active
+RH, you can import the management software and its console to convert
+this host into a peer:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo subutai import management</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Troubleshooting a CDN unreachable error</p>
+<p>When installing directly on a desktop edition, the NetworkManager
+configuration may not configure the/etc/resolv.conf file properly to
+resolve CDN addresses causing “CDN unreachable errors” with the import
+command. If this happens, you must configure NetworkManager to use the
+right nameserver.</p>
+<p>Congratulations! You have a Peer!</p>
+<p>The command will output the Subutai Console’s access URL. See the red
+rectangle in the screen capture below:</p>
+<div class="figure">
+<img alt="" src="data:image/*;base64,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" />
+</div>
+<p>The peer can now be managed from this URL via the Subutai Management
+Console. The default admin user account’s password is secret. On first
+login, you’ll be asked to change this password. Before you login install
+the Subutai E2E Browser Plugin with at least one PGP key.</p>
+<ol class="arabic simple" start="5">
+<li>Post Installation</li>
+</ol>
+<p>With a peer up, some post installation steps are needed to use it.</p>
+<p>Creating and Installing PGP Keys</p>
+<p>Subutai uses PGP key pairs to identify all entities including users like
+cloud owners and peer administrators. The default administrator account
+on the new peer needs to be associated with the global identity of the
+peer owner to share or rent resources to others.</p>
+<p>Manually managing PGP keys</p>
+<p>Users knowing how to manage their own keys can use other tools to do so.
+Various platform specific PGP tools like GPG on Linux can be used on the
+command line interface to create and use PGP keys. Although possible
+it’s a major hassle, especially for those that are not PGP savvy worse
+yet it can actually be detrimental for those who don’t understand PKI or
+how to secure their keys. Even PGP pros will be annoyed when having to
+manually deal with frequent challenge and response authorization
+operations.</p>
+<p>This is why we created browser plugins. Additionally we’re working on
+FIDO and hardware key fob integration to always improve security. The
+Subutai E2E browser plugins have these benefits while still leaving the
+manual approach open.</p>
+<p>As mentioned, the Subutai E2E Browser Plugin / Extension should be
+installed in the browser with either an existing key or a newly
+generated PGP key before logging into the management console. The plugin
+will generate a new key pair for you if you don’t already have one. You
+can easily import and export keys into the plugin.</p>
+<ol class="arabic simple" start="6">
+<li>Install P2P Daemon and Subutai Control Center</li>
+</ol>
+<p>If you want to manage your Subutai Peers from your Desktop PC, you will
+still need to install two additional softwares: the P2P Daemon and
+Subutai Control Center. The P2P daemon allows systems to join the swarm
+to access private cloud environments. The Control Center allows you to
+conveniently access environments from your desktop, manage your peers
+and check your Goodwill balance.</p>
+<p>Linux Desktop</p>
+<p>We only support Debian based systems right now. Instructions are below:</p>
+<p>Install the P2P Daemon</p>
+<p>Download the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.deb">deb
+package</a>
+and install it with apt:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo apt install /path/to/subutai-p2p.deb</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Install the Subutai Control Center</p>
+<p>Download the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.deb">deb
+package</a>
+and install it with apt:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">sudo apt install /path/to/subutai-tray.deb</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Mac OS</p>
+<p>Install the Subutai P2P Daemon</p>
+<p>Download and install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.pkg">Mac OS
+package</a>.</p>
+<p>Install the Subutai Control Center</p>
+<p>Download and install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.pkg">Mac
+package</a>.</p>
+<p>Windows</p>
+<p>Install the Subutai P2P Daemon</p>
+<p>Install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.msi">MSI package for
+Windows</a>.
+Double click after downloading and follow the instructions.</p>
+<p>Install the Subutai Control Center</p>
+<p>Install the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-tray.msi">MSI package for
+Windows</a>.
+Double click after downloading and follow the instructions.</p>
+</div>
+</div>
+
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-6">
+                            <div id="previuos"><a href="01_What_is_the_PeerOS.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i>Previous</a></div>
+                    </div>
+                    <div class="col-sm-6">
+                            <div id="next" style="text-align: right;"><a href="03_Run_PeerOS_with_Vagrant.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i>Next</a></div>    
+                    </div>
+                </div>
+                <br/>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="disqus_thread"></div>
+                        <script>
+
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://subutai-io.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+      <br/>
+
+
+    
+
+    <!-- Section 4 - Community -->
+  <section>
+    <div class="row cont-part5">
+      <div class="container">
+        <div class="text-center">
+          <h1>Community</h1>
+          <h3 style="color: #fff;">We’d love to hear from you!</h3>
+        </div><br><br>
+        <div class="icons-cont-part5">
+          <div class="text-center">
+            <a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/SubutaiCloud" target="_blank" style="margin-top: 5px;">
+                <span class="fab fa-twitter"></span>Twitter
+             </a>
+             <a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com/subutaicloud" target="_blank">
+                <span class="fab fa-facebook"></span>Facebook
+             </a>
+             <a class="btn btn-block btn-social btn-reddit" href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank">
+                <span class="fab fa-reddit"></span>Reddit
+             </a>
+             <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank">
+                <span class="fab fa-linkedin"></span>LinkedIn
+             </a>
+             <a class="btn btn-block btn-social btn-slack" href="//slack.subut.ai" target="_blank" style="background-color: #fff; color: #000;">
+                <span class="fab fa-slack"></span>Slack
+             </a>
+             <a class="btn btn-block btn-social btn-telegram" href="//slack.subut.ai" target="_blank" style="background-color: #2fade7; color: #fff;">
+                <span class="fab fa-telegram"></span>Telegram
+             </a>
+          </div>
+        </div><br/>
+
+        <div class="mailchimp">
+        <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          
+          <style type="text/css">
+            #mc_embed_signup{
+              background: #04192b;
+               clear:left;
+               font:15px 'Maven Pro', sans-serif;;
+               color: #fff;
+             }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          
+          <div id="mc_embed_signup">
+            <form action="https://optdyn.us17.list-manage.com/subscribe/post?u=35361aa6e4a7374ec14c974bc&amp;id=a9787e94b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <br/>
+                      <input style="background-color: #fff;border-color: #078dd0; color: #333;" type="email" placeholder="YOUR EMAIL" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35361aa6e4a7374ec14c974bc_a9787e94b0" tabindex="-1" value=""></div>
+                    <div class="clear"><input style="background-color: #000;margin-top: 4%; height: 43px;" type="submit" value="SIGN UP FOR UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->    
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 - Tribute -->
+  <section>
+    <div class="row cont-part6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h3>Tribute: <a href="internal-pages/tribute.html">Standing on the Shoulders of Giants ></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- row -->
+      <div class="row cont-footer">
+        <footer>
+          <div class="cont-footer">
+            <div class="container" style="padding-top: 20px;">
+              <div class="row" style="">
+                <div class="col-lg-4">
+                  <div class="text-center">
+                    <img src="../../_static/optdyn.png" class="img" alt="Optdyn" width="150">
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <p>Copyright &copy; <span id="currentYear"></span> OptDyn. All rights reserved.</p>
+                    <p><a href="#">Privacy |</a> <a href="#">Terms of Use |</a> <a href="#"> Cookies</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="icons-cont-footer">
+                    <div class="text-center">
+                      <a href="https://twitter.com/SubutaiCloud" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                      <a href="https://www.facebook.com/subutaicloud" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                      <a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                      <a href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div><!-- /row -->
+
+      
+
+    </div>
+    <!-- /container -->
+    <script type="text/javascript">
+        var currentYear = (new Date()).getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+  </body>
+</html>

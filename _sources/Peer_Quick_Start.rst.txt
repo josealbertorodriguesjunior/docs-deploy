@@ -1,0 +1,67 @@
+Peer Quick Start
+================
+The easiest and quickest way to get a Subutai Peer running on any
+platform is to use Vagrant with VirtualBox. Don't use package managers
+to install them: their versions are too old. Download the latest vagrant
+2.0.1 or higher and VirtualBox 5.1.0 or higher from their respective
+websites. Once Vagrant and VirtualBox are installed init the Vagrantfile
+then up the instance:
+
+(Here we need to copy requirements from current user guide on website.)
+
+1.1 This command creates a VM based on Ubuntu Server 16.04.3.
+(Recommended):
+
+vagrant init --minimal subutai/xenial
+
+1.2 This command creates a VM based on Debian 9.x. :
+
+vagrant init --minimal subutai/stretch
+
+2. After you should install special plugin for VirtualBox:
+
+vagrant plugin install vagrant-vbguest
+
+3. When plugin is installed you need to build your peer:
+
+vagrant up
+^^^^^^^^^^
+
+**Congratulations you have a Peer!**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| default:
+| default: SUCCESS: Your peer is up. Welcome to the Horde!
+| default: -----------------------------------------------
+| default:
+| default: Next steps ...
+| default: Make sure Subutai's E2E Extension/Plugin is installed in your
+  browser
+| default: Search for 'Subutai' in your browser's extension/plugin store
+  to find it and install.
+| default:
+| default: Console URL: https://172.16.1.121:8443
+| default: Default u/p: 'admin' / 'secret'
+| default:
+| default: Vagrant ssh and change the default 'subutai'/'ubuntai' user
+  password!
+| default: If you forget the url, just take a look in
+  .vagrant/generated.yml
+
+After peer is created you need to register it on hub.subut.ai. Please
+use given to you before credentials: IP address, login and password of
+new peer (login and password always the same: admin/secret), you will be
+able to change password during the registration.
+
+1. Enter given IP address into address bar of browser.
+
+2. Input login and password, and change the last one.
+
+3. The Subutai Console will be opened, on the right corner of this page
+       push “Register” button and input all necessary information: your
+       login and password on hub.subut.ai, name of peer, peer’s scope
+       (public/private). And push “register” button.
+
+4. Your peer will appear on hub.subut.ai peers list.
+
+You can now use it!

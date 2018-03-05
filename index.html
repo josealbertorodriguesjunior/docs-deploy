@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Subutai  &mdash; Subutai Documentation v6.x</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Subutai helps connect individuals from all over the globe so they may share resources to create secure cloud environments across their peers. Just as a cloud can float down onto land and is thus called fog, IoT devices attach when available and needed to your cloud as it floats around with you.">
+    <meta name="author" content="Optdyn Corporation">
+    <meta name="keywords" content="Optdyn, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT">
+
+    <!--Custom CSS from J&J-->
+    <link rel="stylesheet" href="_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/customcss/bootstrap-social.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/fontawesome/fontawesome-all.css" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../_static/customcss/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/customcss/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/customcss/bootstrap-social.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fontawesome/fontawesome-all.css" type="text/css" />
+
+    
+
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+
+
+
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+
+<link rel="stylesheet" href="_static/custom/styles.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '6.4',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    
+    <link rel="icon" type="image/png"  href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Subutai Documentation v6.x" href="#" />
+    <link rel="next" title="About" href="About.html" /> 
+  </head>
+  <body role="document" style="font-family: 'Maven Pro' sans-serif;">
+
+
+    <nav class="row navbar navbar-inverse navbar-fixed-top" style="">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="logo" src="_static/logo.png" width="160"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #000;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="internal-pages/p2p-cloud-platform.html" ><h4 style="font-size: 14px; color: #fff; font-weight: 700;">P2P Cloud Platform</h4></a></li>
+          <li><a href="internal-pages/goodwill.html"><h4 style="font-size: 14px; color: #fff; font-weight: 700;">GoodWill</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Ideation<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="internal-pages/p2p-cloud.html"><h4 style="font-size: 14px; font-weight: 700;">P2P Cloud</h4></a></li>
+                  <li><a href="internal-pages/manifesto.html"><h4 style="font-size: 14px; font-weight: 700;">Manifesto</h4></a></li>
+                  <li><a href="https://subutai.blog/"><h4 style="font-size: 14px; font-weight: 700;">Blog</h4></a></li>
+                  <li><a href="internal-pages/tribute.html"><h4 style="font-size: 14px; font-weight: 700;">Tribute</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA"><h4 style="font-size: 14px; font-weight: 700;">Presentation</h4></a></li>
+                  <li><a href="https://docs.subutai.io/glossary.html" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Glossary</h4></a></li>
+                </ul>
+              </li>
+
+          <li><a href="https://docs.subutai.io/attic/Peer/getting-started.html" target="_blank"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Getting Started</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Resources<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://github.com/subutai-io" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">GitHub</h4></a></li>
+                  <li><a href="internal-pages/faq.html"><h4 style="font-size: 14px; font-weight: 700;">FAQ</h4></a></li>
+                  <li><a href="https://github.com/subutai-blueprints" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Blueprints</h4></a></li>
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://subutai.blog/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Use Cases</h4></a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Community<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://slack.subut.ai/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Slack</h4></a></li>
+                  <li><a href="https://telegram.org/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Telegram</h4></a></li>
+                  <li><a href="https://twitter.com/SubutaiCloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Twitter</h4></a></li>
+                  <li><a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Reddit</h4></a></li>
+                  <li><a href="https://www.facebook.com/subutaicloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Facebook</h4></a></li>
+                  <li><a href="https://www.linkedin.com/company/subutai-social-cloud/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Linkedin</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Youtube</h4></a></li>
+                </ul>
+              </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- container -->
+    <div class="container-fluid">
+      
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h4>Next topic</h4>
+  <p class="topless"><a href="About.html"
+                        title="next chapter">About</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="subutai-documentation">
+<h1>Subutai Documentation<a class="headerlink" href="#subutai-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Join the Subutai Horde! Be part of the P2P Cloud Crowd.</p>
+<div class="toctree-wrapper compound" id="id1">
+<p class="caption"><span class="caption-text">General</span><a class="headerlink" href="#id1" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="About.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="About.html#the-open-source-project">The Open Source Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="About.html#our-mission">Our Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="About.html#our-ultimate-vision">Our Ultimate Vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="About.html#how-does-it-work">How does it work?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Bazaar_Quick_Start.html">Bazaar Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bazaar_Quick_Start.html#quick-start">Quick start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Bazaar_Quick_Start.html#subutai-bazaar">Subutai Bazaar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bazaar_Quick_Start.html#subutai-peeros">Subutai PeerOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FOSS_Contribution_Program.html">FOSS Contribution Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Manifesto.html">Manifesto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Manifesto.html#subutai-manifesto">Subutai Manifesto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Peer_Quick_Start.html">Peer Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Peer_Quick_Start.html#vagrant-up">vagrant up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Peer_Quick_Start.html#congratulations-you-have-a-peer"><strong>Congratulations you have a Peer!</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Roadmap.html">Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#peeros-functionality">PeerOS Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#vagrant-and-packer">Vagrant and Packer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#control-center">Control Center</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#identity-management-and-e2e-plugin">Identity Management and E2E Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Support.html">Support</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="id2">
+<p class="caption"><span class="caption-text">Subutai Products</span><a class="headerlink" href="#id2" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Products/PeerOS_toctree.html">PeerOS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/01_What_is_the_PeerOS.html">What Is The PeerOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/02_Install_PeerOS.html">Install PeerOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/03_Run_PeerOS_with_Vagrant.html">Run PeerOS With Vagrant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/04_How_to_use_the_Subutai_Console.html">How To Use The Subutai Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/05_How_to_use_Control_Center_and_P2P.html">How To Use Control Center And P2P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/06_How_to_update_Subutai_components.html">How To Update Subutai Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/PeerOS/07_Using_Environments.html">Using Environments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Products/Router_toctree.html">Blockchain Router</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Products/Router/About_Blockchain_Router.html">About Blockchain Router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Router/Cloud_Router_and_IoT_Gateway.html">Cloud Router And IoT Gateway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Router/Specifications.html">Specifications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Products/Bazaar_toctree.html">Bazaar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/01_Subutai_Bazaar.html">Subutai Bazaar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/02_User_Profile_Account_Settings.html">User Profile Account Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/03_Billing_Info.html">Billing Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/04_Peers_page_user_menu.html">Peers Page User Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/05_Domains.html">Domains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/06_Products.html">Products</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/07_SSH_key_management.html">SSH Key Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/08_Application_settings.html">Application Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/09_Invitations_and_Coupons.html">Invitations And Coupons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/10_CDN.html">CDN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/10_CDN.html#subutai-cdn-is-a-server-where-you-can-store-your-templates-and-also-use-other-templates-to-create-own-environment-and-host-sites-or-other-sorts-of-applications">Subutai CDN is a server where you can store your templates and also use other templates to create own environment and host sites or other sorts of applications.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/11_Organizations_user.html">Organizations User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/12_GitHub_Projects.html">GitHub Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/13_Cloud_accounts.html">Cloud Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/14_Friends_page.html">Friends Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/15_Application_logs.html">Application Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/16_Chat_notifications_balance.html">Chat Notifications Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/17_Environments.html">Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/18_How_to_create_and_use_environments.html">How To Create And Use Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/19_How_to_use_AppScale.html">How To Use AppScale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/20_War_room.html">War Room</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/21_Peers.html">Peers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/23_Remote_Desktop.html">Remote Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/24_Products.html">Products</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/25_Map_of_peers.html">Map Of Peers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/26_Users.html">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Products/Bazaar/27_E2E_plugin.html">E2E Plugin</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="id3">
+<p class="caption"><span class="caption-text">Community</span><a class="headerlink" href="#id3" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#start-using-subutai">Start Using Subutai</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#what-do-you-think">What do you think?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#design-the-p2p-cloud-economy">Design the P2P cloud economy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#earn-goodwill-and-prosper">Earn GoodWill and Prosper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#create-new-application-blueprints">Create new application blueprints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#contribute-resources-to-os-githhub-projects">Contribute resources to OS GithHub Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#get-free-resources-for-github-projects">Get Free Resources for GitHub Projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Roadmap.html">Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#peeros-functionality">PeerOS Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#vagrant-and-packer">Vagrant and Packer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#control-center">Control Center</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Roadmap.html#identity-management-and-e2e-plugin">Identity Management and E2E Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="id4">
+<p class="caption"><span class="caption-text">Resources</span><a class="headerlink" href="#id4" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Resources/Resources_toctree.html">Resources</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="id5">
+<p class="caption"><span class="caption-text">GitHub Projects</span><a class="headerlink" href="#id5" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Projects/bazaar_toctree.html">Bazaar API</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/agent_toctree.html">PeerOS Agent</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/peer-os_toctree.html">PeerOS Console</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/snap_toctree.html">PeerOS Snap</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/p2p_toctree.html">Peer-to-Peer Daemon</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/peer-os-plugins_toctree.html">PeerOS Plugins</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/router_toctree.html">Router Hardware</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/cdn_toctree.html">CDN Server</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/browser-plugins_toctree.html">Browser Plugins</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/control-center_toctree.html">Control Center</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/packer_toctree.html">Packer Vagrant Boxes</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/vagrant_toctree.html">Vagrant Plugin</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/ansible_toctree.html">Ansible Module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/readthedocs_toctree.html">Read The Docs</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/hackathon_toctree.html">Read The Docs</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/subutron_toctree.html">The Subutron</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Projects/playbooks_toctree.html">Test Playbooks</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                            <div id="next" style="text-align: right;"><a href="About.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i>Next</a></div>    
+                    </div>
+                </div>
+                <br/>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="disqus_thread"></div>
+                        <script>
+
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://subutai-io.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+      <br/>
+
+
+    
+
+    <!-- Section 4 - Community -->
+  <section>
+    <div class="row cont-part5">
+      <div class="container">
+        <div class="text-center">
+          <h1>Community</h1>
+          <h3 style="color: #fff;">We’d love to hear from you!</h3>
+        </div><br><br>
+        <div class="icons-cont-part5">
+          <div class="text-center">
+            <a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/SubutaiCloud" target="_blank" style="margin-top: 5px;">
+                <span class="fab fa-twitter"></span>Twitter
+             </a>
+             <a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com/subutaicloud" target="_blank">
+                <span class="fab fa-facebook"></span>Facebook
+             </a>
+             <a class="btn btn-block btn-social btn-reddit" href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank">
+                <span class="fab fa-reddit"></span>Reddit
+             </a>
+             <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank">
+                <span class="fab fa-linkedin"></span>LinkedIn
+             </a>
+             <a class="btn btn-block btn-social btn-slack" href="//slack.subut.ai" target="_blank" style="background-color: #fff; color: #000;">
+                <span class="fab fa-slack"></span>Slack
+             </a>
+             <a class="btn btn-block btn-social btn-telegram" href="//slack.subut.ai" target="_blank" style="background-color: #2fade7; color: #fff;">
+                <span class="fab fa-telegram"></span>Telegram
+             </a>
+          </div>
+        </div><br/>
+
+        <div class="mailchimp">
+        <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          
+          <style type="text/css">
+            #mc_embed_signup{
+              background: #04192b;
+               clear:left;
+               font:15px 'Maven Pro', sans-serif;;
+               color: #fff;
+             }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          
+          <div id="mc_embed_signup">
+            <form action="https://optdyn.us17.list-manage.com/subscribe/post?u=35361aa6e4a7374ec14c974bc&amp;id=a9787e94b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <br/>
+                      <input style="background-color: #fff;border-color: #078dd0; color: #333;" type="email" placeholder="YOUR EMAIL" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35361aa6e4a7374ec14c974bc_a9787e94b0" tabindex="-1" value=""></div>
+                    <div class="clear"><input style="background-color: #000;margin-top: 4%; height: 43px;" type="submit" value="SIGN UP FOR UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->    
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 - Tribute -->
+  <section>
+    <div class="row cont-part6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h3>Tribute: <a href="internal-pages/tribute.html">Standing on the Shoulders of Giants ></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- row -->
+      <div class="row cont-footer">
+        <footer>
+          <div class="cont-footer">
+            <div class="container" style="padding-top: 20px;">
+              <div class="row" style="">
+                <div class="col-lg-4">
+                  <div class="text-center">
+                    <img src="_static/optdyn.png" class="img" alt="Optdyn" width="150">
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <p>Copyright &copy; <span id="currentYear"></span> OptDyn. All rights reserved.</p>
+                    <p><a href="#">Privacy |</a> <a href="#">Terms of Use |</a> <a href="#"> Cookies</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="icons-cont-footer">
+                    <div class="text-center">
+                      <a href="https://twitter.com/SubutaiCloud" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                      <a href="https://www.facebook.com/subutaicloud" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                      <a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                      <a href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div><!-- /row -->
+
+      
+
+    </div>
+    <!-- /container -->
+    <script type="text/javascript">
+        var currentYear = (new Date()).getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+  </body>
+</html>

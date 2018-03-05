@@ -1,0 +1,30 @@
+Bazaar Quick Start
+==================
+Quick start
+===========
+
+Subutai Bazaar
+--------------
+
+`*Subutai Bazaar* <http://bazaar.subutai.io>`__ is the P2P cloud market
+and social environment for the `*Subutai
+Platform* <http://subutai.io>`__.
+
+-  Sign up and log in
+
+-  Bazaar documentation index
+
+Subutai PeerOS
+--------------
+
+Subutai PeerOs is a multi-platform open source software bundle that
+enables users to share, barter or sell computing resources on Subutai
+Platform. It is the building block of Subutai’s P2P cloud services. You
+can install it in your own computer(s) and start offering resources on
+the Subutai Bazaar.
+
+-  Recommended install. Fresh debian system, 100G disk, snapd.
+
+-  Quick install/demo - Vagrant.
+
+-  Post-install.
